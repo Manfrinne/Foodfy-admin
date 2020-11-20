@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <link rel="stylesheet" href="/style.css">
+        {% block head %}{% endblock %}
+
+    </head>
+
+
+    <body>
+        <header>
+            <a href="/" id="pointerLogo"><img src="/assets/logo.png" alt="Logo"></a>
+            <div class="menu">
+                {% block header %}{% endblock %}
+            </div>
+        </header>
+
+        {% block content %}{% endblock %}
+        
+        <footer class="footer"> 
+            <p>Todos direitos reservados, receitas Foodfy.</p>  
+        </footer>
+
+        <script src="/script.js"></script>
+             
+    </body>
+
+</html>

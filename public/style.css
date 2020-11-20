@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    position: relative;
+    width: 940px;
+    margin: 32px auto;
+
+    display: grid;
+    grid-template-columns: 213px 1fr;  
+}
+
+#pointerLogo {
+    width: 120px;
+}
+
+header .menu a {
+    font-family: 'Roboto', regular;
+    font-size: 16px;
+    color: #111111;
+    line-height: 26px;
+    text-decoration: none;  
+    padding: 15px;
+}
+
+.hero {
+    width: 940px;
+    height: 365px;
+    margin: 0px auto;
+
+    background: #FBDFDB;
+    border-radius: 30px;
+
+    display: grid;
+    grid-template-columns: 525px 415px;
+}
+
+.hero h1 {
+    font-family: 'Roboto', bold;
+    font-size: 32px;
+    color: #111111;
+    width: 305px;
+    height: 38px;
+
+    margin-left: 60px;
+    margin-top: 117px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    opacity: 0.7;
+    font-family: 'Roboto', regular;
+    font-size: 18px;
+    line-height: 28px;
+    width: 315px;
+    height: 85px;
+    color: #000000;
+
+    margin-left: 60px;
+    margin-top: 0px;
+    
+}
+
+.hero img {
+    justify-self: center;
+    align-self: end;
+    width: 216px;
+    height: 300px;
+}
+
+.cards {
+    width: 940px;
+    height: auto;
+    margin: 0px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+h2 {
+    font-family: 'Roboto', bold;
+    font-size: 24px;
+    color: #111111;
+    margin: 50px auto 19px auto;
+    width: 940px;
+}
+
+.card img {
+    object-fit: cover;
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.card .plate-name h5 {
+    font-family: 'Roboto', regular;
+    font-size: 18px;
+    color: #111111;
+    font-weight: normal;
+    margin-top: 17px;
+    margin-bottom: 3px;
+}
+
+.card .cooker-name p {
+    font-family: 'Roboto', regular;
+    font-size: 14px;
+    color: #777777;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    border-top: 2px solid rgb(214, 178, 178);
+
+    background: #EEEEEE;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+
+    height: 50px;
+    margin-top: 30px
+}
+
+/* Sobre-HTML */
+
+.sobre-text {
+    position: relative;
+    width: 940px;
+    margin: 32px auto;
+}
+
+.sobre-text h3 {
+    font-size: 24px;
+    font-family: 'Roboto', bold;
+    color: #111111;
+}
+
+.sobre-text p {
+    font-family: 'Roboto', regular;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.sobre-text h4 {
+    font-family: 'Roboto', bold;
+    font-size: 20px;   
+    color: #111111;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* Receita Modal */
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0 , 0, 0, 0.5);
+
+    position: fixed;
+    top: 0px;  
+    visibility: hidden;
+}
+
+.modal {
+    background-color: white;
+    width: 600px;
+    height: 360px;
+    margin: 10vh auto;
+    position: relative;
+    border-radius: 16px;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.modal-content .card {
+    pointer-events: none;
+}
+
+
+.modal-content .card img {
+    display: block;
+    width: 600px;
+    height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.modal-content .card .plate-name h5 {
+    font-family: 'Roboto', regular;
+    font-size: 24px;
+    color: #111111;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.modal-content .card .cooker-name p {
+    font-family: 'Roboto', regular;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.modal-content .close-modal {
+    font-family: 'Roboto', regular;
+    font-size: 16px;
+    color: #999999;
+    text-align: center;
+    margin-top: 60px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 240px;
+}
+
+/* Receita Modal Active */
+
+.modal-overlay.active {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: rgba(0 , 0, 0, 0.7);
+    visibility: visible;
+}
+
+/* Unique Recipe */
+
+
+.uniq_img {
+    width: 940px;
+    height: 280px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.uniq_img img {
+    border-radius: 15px;
+}
+
+.uniq_recipe_infor {
+    text-align: center;
+}
+
+#uniq_plate {
+    font-family: 'Roboto', bold;
+    font-size: 36px;
+    color: #111111;
+    line-height: 42px;
+    margin-bottom: 0px;
+}
+
+#uniq_cooker {
+    font-family: 'Roboto', regular;
+    font-size: 20px;
+    color: #777777;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 50px;
+}
+
+.uniq_recipe_content {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.uniq_topics {
+    font-family: 'Roboto', bold;
+    font-size: 26px;
+    color: #111111;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.uniq_topics_contet {
+    font-family: 'Roboto', regular;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+.topics {
+    display: flex;
+    align-items: baseline;
+}
+
+#botton_change1 {
+    font-family: 'Roboto', Bold;
+    font-size: 12px;
+    color: #999999;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#botton_change2 {
+    font-family: 'Roboto', Bold;
+    font-size: 12px;
+    color: #999999;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#botton_change3 {
+    font-family: 'Roboto', Bold;
+    font-size: 12px;
+    color: #999999;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
