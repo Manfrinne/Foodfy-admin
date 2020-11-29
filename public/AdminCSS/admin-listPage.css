@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* ADMIN LIST PAGE */
+
+header {
+  background-color: black;
+  height: 80px;
+}
+
+.HeaderContent {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+

@@ -39,8 +39,6 @@ server.get("/recipes/:index", function(req, res) {
 
     const recipe = recipes[recipeIndex]
 
-    console.log(recipe)
-
     if (!recipe) return res.send("RECIPE NOT FOUND!")
 
     return res.render("users/recipe", {recipe})
