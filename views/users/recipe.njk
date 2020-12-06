@@ -17,11 +17,11 @@
         <div class="uniq_img">
             <img src="{{recipe.image}}" alt="Image recipe {{recipe.title}}">
         </div>
-        
+
         <div class="uniq_recipe_infor">
             <h2 id="uniq_plate">{{recipe.title}}</h5>
             <p id="uniq_cooker">Por {{recipe.author}}</p>
-        </div> 
+        </div>
     </div>
 
     <div class="uniq_recipe_content">
@@ -31,7 +31,7 @@
         </div>
         <div id="content1">
             {%for ingredient in recipe.ingredients%}
-                <li class="uniq_topics_contet">{{ingredient}}</li>
+                <li class="uniq_topics_content">{{ingredient}}</li>
             {%endfor%}
         </div>
     </div>
@@ -42,7 +42,7 @@
         </div>
         <div id="content2">
             {%for preparation in recipe.preparation%}
-                <li class="uniq_topics_contet">{{preparation}}</li>
+                <li class="uniq_topics_content">{{preparation}}</li>
             {%endfor%}
         </div>
     </div>
@@ -52,10 +52,10 @@
             <a id="botton_change3">Mostrar</a>
         </div>
         <div id="content3">
-            <div class="uniq_topics_contet">{{recipe.information}}</div>
+            <div class="uniq_topics_content">{{recipe.information}}</div>
         </div>
     </div>
-          
+
 </section>
 
 {% endblock %}

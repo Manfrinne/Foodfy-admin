@@ -18,7 +18,7 @@ header {
     margin: 32px auto;
 
     display: grid;
-    grid-template-columns: 213px 1fr;  
+    grid-template-columns: 213px 1fr;
 }
 
 #pointerLogo {
@@ -30,7 +30,7 @@ header .menu a {
     font-size: 16px;
     color: #111111;
     line-height: 26px;
-    text-decoration: none;  
+    text-decoration: none;
     padding: 15px;
 }
 
@@ -71,7 +71,7 @@ header .menu a {
 
     margin-left: 60px;
     margin-top: 0px;
-    
+
 }
 
 .hero img {
@@ -127,20 +127,6 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* FOOTER */
-
-.footer {
-    border-top: 2px solid rgb(214, 178, 178);
-
-    background: #EEEEEE;
-    font-size: 14px;
-    color: #999999;
-    text-align: center;
-
-    height: 50px;
-    margin-top: 30px
-}
-
 /* Sobre-HTML */
 
 .sobre-text {
@@ -164,7 +150,7 @@ h2 {
 
 .sobre-text h4 {
     font-family: 'Roboto', bold;
-    font-size: 20px;   
+    font-size: 20px;
     color: #111111;
 
     margin-top: 30px;
@@ -224,7 +210,7 @@ h2 {
     margin-top: 10px;
 }
 
-.uniq_topics_contet {
+.uniq_topics_content {
     font-family: 'Roboto', regular;
     font-size: 18px;
     color: #444444;
@@ -260,16 +246,16 @@ h2 {
     cursor: pointer;
 }
 
+/* FOOTER */
 
+.footer {
+  border-top: 2px solid rgb(214, 178, 178);
 
+  background: #EEEEEE;
+  font-size: 14px;
+  color: #999999;
+  text-align: center;
 
-
-
-
-
-
-
-
-
-
-
+  height: 50px;
+  margin-top: 30px
+}

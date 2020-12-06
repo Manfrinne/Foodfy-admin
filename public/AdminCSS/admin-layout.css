@@ -2,11 +2,12 @@
 
 /* LAYOUT ADMIN PAGE */
 
-html, body {
+html, body, a {
   height: 100%;
   margin: 0;
   padding: 0;
   border: 0;
+  text-decoration: none;
 }
 
 header {

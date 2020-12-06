@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
+
+/* SHOW ADMIN PAGE */
+
+.uniq_recipe {
+  min-height: 1250px;
+  width: 940px;
+  height: 100%;
+  margin: auto;
+}
+
+.titleSingleRecipe {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.titleSingleRecipe h3 {
+  font-family: 'Roboto', bold;
+  font-size: 24px;
+  color: #111111;
+  line-height: 34px;
+  margin: 0px;
+}
+
+.titleSingleRecipe a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 136px;
+  height: 37px;
+  background-color: #6558C3;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.uniq_img img{
+  object-fit: cover;
+  width: 940px;
+  height: 280px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.uniq_recipe_infor {
+  text-align: center;
+}
+
+.uniq_plate {
+  font-family: 'Roboto', bold;
+  font-size: 36px;
+  color: #111111;
+  line-height: 42px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.uniq_cooker {
+  font-family: 'Roboto', regular;
+  font-size: 20px;
+  color: #777777;
+  line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 32px;
+}
+
+.uniq_recipe_content {
+  width: 940px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.uniq_topics {
+  font-family: 'Roboto', bold;
+  font-size: 26px;
+  color: #111111;
+  line-height: 28px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.uniq_topics_content {
+  font-family: 'Roboto', regular;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.uniq_topics_contents li:last-child {
+  margin-bottom: 42px;
+}
+
+.topics {
+  display: flex;
+  align-items: baseline;
+}

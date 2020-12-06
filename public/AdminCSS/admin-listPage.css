@@ -2,8 +2,8 @@
 
 /* LIST ADMIN PAGE */
 
-section {
-  width: 960px;
+.cardRecipesSection {
+  width: 940px;
   height: 100%;
   margin: auto;
 }
@@ -17,7 +17,7 @@ section {
 }
 
 .cardsRecipesManager {
-  width: 960px;
+  width: 940px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -57,7 +57,7 @@ section {
   margin-top: 0px;
 }
 
-.to-view p {
+.to-view a {
   font-family: 'Roboto', bold;
   font-weight: 700;
   font-size: 14px;
