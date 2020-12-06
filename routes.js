@@ -4,9 +4,9 @@ const routes = express.Router()
 
 //admin routes
 routes.get("/admin/recipes", recipes.index)
-routes.get("/admin/recipes/create", recipes.create)
 routes.get("/admin/recipes/show", recipes.show)
 routes.get("/admin/recipes/edit", recipes.edit)
+routes.get("/admin/recipes/create", recipes.create)
 
 
 module.exports = routes

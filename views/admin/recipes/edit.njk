@@ -1,1 +1,32 @@
-EDIT PAGE
+{% extends "../layoutAdmin.njk" %}
+
+{% block content %}
+
+  <section class="uniq_recipe">
+
+    <form method="PUT" action="/recipes">
+
+      <div class="titleEditRecipe">
+        <h3>Editando Receitas</h3>
+        <div class="buttons">
+          <a href="edit" class="deleteButton">Deletar</a>
+          <a href="edit" class="saveButton">Salvar Receita</a>
+        </div>
+      </div>
+
+      {# <div class="editRecipeContent">
+        <div class="item">
+          <div>Imagem da receita</div>
+          <div>
+            <input type="url" name="image_url" placeholder="http://"
+            value="{{ recipe.image }}">
+          </div>
+        </div>
+      </div> #}
+
+    </form>
+
+  </section>
+
+
+{% endblock %}

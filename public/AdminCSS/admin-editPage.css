@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
+
+/* EDIT ADMIN PAGE */
+
+.uniq_recipe {
+  min-height: 1250px;
+  width: 940px;
+  height: 100%;
+  margin: auto;
+}
+
+.titleSingleRecipe {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.titleEditRecipe h3 {
+  font-family: 'Roboto', bold;
+  font-size: 24px;
+  color: #111111;
+  line-height: 34px;
+  margin: 0px;
+}
+
+.titleEditRecipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 26px;
+
+}
+
+.buttons {
+  display: flex;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', bold;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.buttons .saveButton {
+  background-color: #6558C3;
+  width: 139px;
+  height: 37px;
+}
+
+.buttons .deleteButton {
+  background-color: #DC4747;
+  width: 92px;
+  height: 37px;
+  margin-right: 10px;
+}
+
+
+
