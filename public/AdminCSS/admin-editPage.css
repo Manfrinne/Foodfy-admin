@@ -61,5 +61,66 @@
   margin-right: 10px;
 }
 
+.input-block {
+  margin-bottom: 30px;
+}
+
+.input-block label {
+  font-family: 'Roboto', bold;
+  font-weight: 700;
+  font-size: 16px;
+  color: #111111;
+}
+
+input {
+  width: 900px;
+  height: 49px;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 0 20px;
+  margin-top: 10px;
+  font-family: 'Roboto', regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111111;
+}
+
+input::placeholder {
+  font-size: 16px;
+  font-weight: normal;
+  color: #C1BCCC;
+}
+
+button.add-content {
+  font-family: 'Roboto', bold;
+  font-weight: 700;
+  background: none;
+  margin-top: 15px;
+  border: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #6558C3;
+  text-align: right;
+  cursor: pointer;
+}
+
+textarea {
+  width: 900px;
+  height: 257px;
+  resize: vertical;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 4px;
+  padding: 20px;
+  margin-top: 10px;
+  font-family: 'Roboto', regular;
+  font-weight: 400;
+  font-size: 16px;
+  color: #111111;
+}
+
 
 
