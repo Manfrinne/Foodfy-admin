@@ -8,12 +8,36 @@
   margin: auto;
 }
 
+.header-ManagerRecipe {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
 .title-recipesManager {
   font-family: 'Roboto', bold;
   font-size: 24px;
   margin-top: 50px;
   margin-bottom: 30px;
   color: #111111;
+}
+
+.buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', bold;
+  font-size: 16px;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.buttons .createButton {
+  background-color: #6558C3;
+  width: 139px;
+  height: 37px;
 }
 
 .cardsRecipesManager {
