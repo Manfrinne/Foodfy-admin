@@ -93,7 +93,7 @@ input::placeholder {
   color: #C1BCCC;
 }
 
-button.add-content {
+button.add-ingredient, button.add-steps {
   font-family: 'Roboto', bold;
   font-weight: 700;
   background: none;
