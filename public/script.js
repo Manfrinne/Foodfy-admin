@@ -1,19 +1,8 @@
-const cards = document.querySelectorAll(".card")
 const recipes = document.querySelectorAll(".uniq_recipe_content")
 const content = document.getElementById("content")
 const botton1 = document.getElementById("botton_change1")
 const botton2 = document.getElementById("botton_change2")
 const botton3 = document.getElementById("botton_change3")
-
-
-for (let card of cards) {
-    card.addEventListener("click", function() {
-        
-        const urlID = card.getAttribute("number")
-
-        window.location.href = `/recipes/${urlID}`
-    });
-};
 
 botton1.addEventListener("click", function() {
     if (content1.style.display === "none") {

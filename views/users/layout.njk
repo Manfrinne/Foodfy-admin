@@ -18,13 +18,23 @@
         </header>
 
         {% block content %}{% endblock %}
-        
-        <footer class="footer"> 
-            <p>Todos direitos reservados, receitas Foodfy.</p>  
+
+        <footer class="footer">
+            <p>Todos direitos reservados, receitas Foodfy.</p>
         </footer>
 
-        <script src="/script.js"></script>
-             
+        <script>
+          const cards = document.querySelectorAll(".card")
+          for (let card of cards) {
+              card.addEventListener("click", function() {
+
+                  const urlID = card.getAttribute("number")
+
+                  window.location.href = `/recipes/${urlID}`
+              });
+          };
+        </script>
+
     </body>
 
 </html>
