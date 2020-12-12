@@ -50,3 +50,19 @@ exports.post = function(req, res) {
     return res.redirect("recipes")
   })
 }
+
+exports.show = function(req, res) {
+  const {number} = req.params
+
+  const foundRecipe = data.recipes.find(function(recipe) {
+    return recipe.number == number
+  })
+
+  if (!foundRecipe) return res.send("RECIPE NOT FOUND!")
+
+  const recipe = {
+    ...foundRecipe
+  }
+
+  return res.render("admin/recipes/show", {recipe})
+}

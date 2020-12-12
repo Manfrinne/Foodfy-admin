@@ -11,6 +11,9 @@ routes.get("/admin/recipes/create", recipes.create); // Mostrar formulário de n
 
 routes.post("/admin/recipes", recipes.post); // Cadastrar nova receita
 
+routes.get("/admin/recipes/:number", recipes.show); // Exibir detalhes de uma receita
+
+
 
 module.exports = routes
 

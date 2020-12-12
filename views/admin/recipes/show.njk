@@ -6,17 +6,17 @@
 <section class="uniq_recipe">
 
   <div class="titleSingleRecipe">
-    <h3>Receita: Single Reciper Page</h3>
+    <h3>Receita: {{recipe.title}}</h3>
     <a href="edit" class="editButton">Editar Receita</a>
   </div>
 
   <div class="uniq_img">
-      <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image single recipe">
+      <img src="{{recipe.image_url}}" alt="Image {{recipe.title}}">
   </div>
 
   <div class="uniq_recipe_infor">
-      <h2 class="uniq_plate">Single Reciper Page</h5>
-      <p class="uniq_cooker">por Single Cooker</p>
+      <h2 class="uniq_plate">{{recipe.title}}</h5>
+      <p class="uniq_cooker">por {{recipe.author}}</p>
   </div>
 
   <div class="uniq_recipe_content">
@@ -24,22 +24,18 @@
       <h3 class="uniq_topics">Ingredientes</h3>
     </div>
     <div class="uniq_topics_contents">
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
+      {%for ingredient in recipe.ingredients%}
+        <li class="uniq_topics_content">{{ingredient}}</li>
+      {%endfor%}
     </div>
 
     <div class="topics">
       <h3 class="uniq_topics">Modo de preparo</h3>
     </div>
     <div class="uniq_topics_contents">
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
-      <li class="uniq_topics_content"> 3 kg de carne moída (escolha uma carne magra e macia);</li>
+      {%for preparation in recipe.preparation_step%}
+        <li class="uniq_topics_content">{{preparation}}</li>
+      {%endfor%}
     </div>
 
     <div class="topics">
@@ -47,7 +43,7 @@
     </div>
     <div class="uniq_topics_contents">
       <div class="uniq_topics_content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam, quae veritatis, rerum molestiae cumque tempora est ex dolorem delectus repellendus architecto modi corrupti inventore accusantium ducimus? Voluptates, necessitatibus asperiores?
+        {{recipe.additional_information}}}
       </div>
     </div>
   </div>
