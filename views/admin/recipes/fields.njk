@@ -1,0 +1,38 @@
+
+
+      <div class="editRecipeContent">
+        <div class="input-block">
+          <label for="name">Imagem da receita</label>
+          <div>
+            <input type="url" name="image_url" placeholder="http://..."
+            value="{{ recipe.image }}">
+          </div>
+        </div>
+        <div class="input-block">
+          <label for="ingredients">Ingredientes</label>
+          <div id="ingredients">
+            <div class="ingredient">
+              <input type="text" name="ingredients[]" placeholder="Digite o ingrediente..." value="{{ recipe.ingredient }}">
+            </div>
+          </div>
+          <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
+        </div>
+        <div class="input-block">
+          <label for="preparation_step">Modo de preparo</label>
+          <div id="preparations-steps">
+            <div class="preparations-step">
+              <input type="text" name="preparation_step[]" placeholder="Digite o passo para preparo..." value="{{ recipe.ingredient }}">
+            </div>
+          </div>
+          <button type="button" class="add-steps">Adicionar novo passo</button>
+        </div>
+        <div class="input-block">
+          <label for="additional_information">Informações adicionais</label>
+          <div>
+            <div>
+              <textarea name="additional_information"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
