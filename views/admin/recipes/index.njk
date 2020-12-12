@@ -13,109 +13,30 @@
 
   <div class="cardsRecipesManager">
 
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
-      </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
+    {%for recipe in recipes%}
 
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
+      <div class="singleCard">
+        <div class="cardImage">
+          <img src="{{recipe.image_url}}" alt="Image {{recipe.title}}">
+        </div>
+        <div class="card-description">
+          <div class="plate-name">
+            <p>{{recipe.title}}</p>
+          </div>
+          <div class="cooker-name">
+            <p>por {{recipe.author}}</p>
+          </div>
+          <div class="to-view">
+            <a href="recipes/show">Visualizar</a>
+          </div>
+        </div>
       </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
 
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
-      </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
-
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
-      </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
-
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
-      </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
-
-    <div class="singleCard">
-      <div class="cardImage">
-        <img src="https://images.unsplash.com/photo-1517274885739-760f0910eefc?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OHx8cmVjaXBlc3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Image Card">
-      </div>
-      <div class="card-description">
-        <div class="plate-name">
-          <p>Triplo bacon burger</p>
-        </div>
-        <div class="cooker-name">
-          <p>por Jorge Relato</p>
-        </div>
-        <div class="to-view">
-          <a href="recipes/show">Visualizar</a>
-        </div>
-     </div>
-    </div>
+    {%endfor%}
 
   </div>
+
+
 
 </section>
 

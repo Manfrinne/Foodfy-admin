@@ -6,7 +6,7 @@ exports.redirect = function(req, res) {
 }
 
 exports.index = function(req, res) {
-  return res.render("admin/recipes/index")
+  return res.render("admin/recipes/index", {recipes: data.recipes})
 }
 
 exports.create = function(req, res) {
@@ -30,9 +30,15 @@ exports.post = function(req, res) {
     number = lastRecipe.number + 1
   }
 
+  // variável temporária
+  let title = "Nova receita"
+  let author = "Nome do Autor"
+
   data.recipes.push({
-    number,
     image_url,
+    title,
+    number,
+    author,
     ingredients,
     preparation_step,
     additional_information,
