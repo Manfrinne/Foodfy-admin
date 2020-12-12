@@ -4,12 +4,12 @@
 
   <section class="uniq_recipe">
 
-    <form method="PUT" action="/recipes">
+    <form method="POST" action="/admin/recipes">
 
       <div class="titleEditRecipe">
         <h3>Criando Receitas</h3>
         <div class="buttons">
-          <a href="edit" class="saveButton">Salvar Receita</a>
+          <button type="submit" class="saveButton">Salvar Receita</button>
         </div>
       </div>
 
@@ -34,7 +34,7 @@
           <label for="name">Modo de preparo</label>
           <div id="preparations-steps">
             <div class="preparations-step">
-              <input type="text" name="preparation-step[]" placeholder="Digite o passo para preparo..." value="{{ recipe.ingredient }}">
+              <input type="text" name="preparation_step[]" placeholder="Digite o passo para preparo..." value="{{ recipe.ingredient }}">
             </div>
           </div>
           <button type="button" class="add-steps">Adicionar novo passo</button>
@@ -43,7 +43,7 @@
           <label for="name">Informações adicionais</label>
           <div>
             <div>
-              <textarea name="additional-information"></textarea>
+              <textarea name="additional_information"></textarea>
             </div>
           </div>
         </div>

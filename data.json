@@ -1,0 +1,32 @@
+{
+  "recipes": [
+    {
+      "number": 2,
+      "image_url": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAC0CAMAAABVJy5gAAADAFBMVEUAAAC3vq/TxKOIwrykyPmuz/yszvu31fq51/i42fuz1vyz1/2z2f6y2v+v2/71qn76uoX4pJLwoJHEo3ur3v5cjl2DhVCMf1A4ZTwyVSoiTB8jSBcEKgM/XDKh4/0ORxtrmIevz5HFuYG8ur7754hZke4zWSyT4/2K5vyN4/wLOQ0pVTg5bY1bh6m5veGYsL8oUSRHZCGmtrSLqM18l9lcj+hChfRAhfdMjPNsouhVkfFAhfcmUSErSiMtWCuM8f+W/P+Y3/cbQhkxZHRCgthlof2RpPevvKWQoWhqlt5JifA2gPwoev42fvVDhvZChvZblfAsVCUdQAY2Xi+I7J2m//9TjWA6dKhDiv5Kkv+Llielmxc/hPb4uYk4tVtFolc2dj0zqFNfx359qYsKMxG7x4Tj4ET//1fn7V/5n5f7npSD7JouYy580dmZzd9UdVD+/lDU2Wb9nZX/m5MtlkZEcl8zZD9Chvb/mJFXh2N50/BWmnwbViRMfXH/kIiM8Kv+gXb9bmLAemMppUz5Y1X4XFDRyYX67U379k795nXZ0p3RvZiEssWCrOH85oj55oeP7qaS66j9V0jxYEr/WknvRDZqajsFMSz+5oP96X7953n+6mH76VX+6YaP76r+VUNgTylKl+OO9KmN86emSTGrmmk/fcCM9KNim/KF9pxum6UsWlH99EuB85d/9ouB9Yt87ZOJ/pCS/5mZ/6Od/6kTRxxOvWaKqMG7yFOm/61XbTZtdxx8+I1gyHZDa1pit7qS4pweSiB7vWeU0nToUD7yV0fuRTbsQzWDTy73thTwSjzpRDbqOCvqQjT/QTdHRx/yKh2yWjz4vBH5vhT/xwL8vAT/1wLPuRvZj5qpzlu53nfxPzP3fXD1QTXtxh/6vAf6vQ9okFHqTDvNUDn3vRjrV0P2vFPxcU2Xjsr2fVT0i1fweFSoi7",
+      "ingredients": [
+        "2 Tomates",
+        "Tomate de TESTE",
+        "dasda"
+      ],
+      "preparation_step": [
+        "Qualquer cosia",
+        "Qualquer cosia",
+        "Qualquer cosia"
+      ],
+      "additional_information": "Qualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosiaQualquer cosia"
+    },
+    {
+      "number": 3,
+      "image_url": "http://endereço-da-imagem",
+      "ingredients": [
+        "Tomate de TESTE",
+        "Tomate de TESTE"
+      ],
+      "preparation_step": [
+        "Qualquer cosia",
+        "Qualquer cosia"
+      ],
+      "additional_information": "dsadasdasdasd"
+    }
+  ]
+}
