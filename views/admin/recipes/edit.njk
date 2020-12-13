@@ -4,53 +4,25 @@
 
   <section class="uniq_recipe">
 
-    <form method="PUT" action="/recipes">
+    <form method="POST" action="/recipes?_method=DELETE">
 
       <div class="titleEditRecipe">
         <h3>Editando Receitas</h3>
         <div class="buttons">
-          <a href="edit" class="deleteButton">Deletar</a>
-          <a href="edit" class="saveButton">Salvar Receita</a>
+          <button form="form-delete" class="deleteButton">Deletar</button>
+          <button class="saveButton">Salvar Receita</button>
         </div>
       </div>
 
       <div class="editRecipeContent">
-        <div class="input-block">
-          <label for="name">Imagem da receita</label>
-          <div>
-            <input type="url" name="image_url" placeholder="http://..."
-            value="{{ recipe.image }}">
-          </div>
-        </div>
-        <div class="input-block">
-          <label for="name">Ingredientes</label>
-          <div id="ingredients">
-            <div class="ingredient">
-              <input type="text" name="ingredients[]" placeholder="Digite o ingrediente..." value="{{ recipe.ingredient }}">
-            </div>
-          </div>
-          <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
-        </div>
-        <div class="input-block">
-          <label for="name">Modo de preparo</label>
-          <div id="preparations-steps">
-            <div class="preparations-step">
-              <input type="text" name="preparation-step[]" placeholder="Digite o passo para preparo..." value="{{ recipe.ingredient }}">
-            </div>
-          </div>
-          <button type="button" class="add-steps">Adicionar novo passo</button>
-        </div>
-        <div class="input-block">
-          <label for="name">Informações adicionais</label>
-          <div>
-            <div>
-              <textarea name="additional-information"></textarea>
-            </div>
-          </div>
-        </div>
+
+        {% include 'admin/recipes/fields.njk' %}
+        <input type="hidden" name="number" value={{recipe.number}}>
+
       </div>
 
     </form>
+
   </section>
 
   <script src="/scriptAddItem.js"></script>

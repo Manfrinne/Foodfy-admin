@@ -7,7 +7,7 @@
 
   <div class="titleSingleRecipe">
     <h3>Receita: {{recipe.title}}</h3>
-    <a href="edit" class="editButton">Editar Receita</a>
+    <a href="/admin/recipes/{{recipe.number}}/edit" class="editButton">Editar Receita</a>
   </div>
 
   <div class="uniq_img">
@@ -43,7 +43,7 @@
     </div>
     <div class="uniq_topics_contents">
       <div class="uniq_topics_content">
-        {{recipe.additional_information}}}
+        {{recipe.additional_information}}
       </div>
     </div>
   </div>
