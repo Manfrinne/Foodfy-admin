@@ -4,26 +4,30 @@
 
   <section class="uniq_recipe">
 
-    <form method="POST" action="/recipes?_method=DELETE">
+    <form method="POST" action="/admin/recipes?_method=PUT">
 
       <div class="titleEditRecipe">
         <h3>Editando Receitas</h3>
         <div class="buttons">
-          <button form="form-delete" class="deleteButton">Deletar</button>
-          <button class="saveButton">Salvar Receita</button>
+          <button type="submit" form="form-delete" class="deleteButton">Deletar</button>
+          <button type="submit" class="saveButton">Salvar Receita</button>
         </div>
       </div>
 
       <div class="editRecipeContent">
 
         {% include 'admin/recipes/fields.njk' %}
-        <input type="hidden" name="number" value={{recipe.number}}>
+        <input type="hidden" name="id" value={{recipe.id}}>
 
       </div>
 
     </form>
 
   </section>
+
+  <form method="POST" id="form-delete" action="/admin/recipes?_method=DELETE">
+    <input type="hidden" name="id" value={{recipe.id}}>
+  </form>
 
   <script src="/scriptAddItem.js"></script>
 

@@ -2,7 +2,7 @@ const fs = require("fs")
 const data = require("../data.json")
 
 exports.redirect = function(req, res) {
-  return res.redirect("recipes")
+  return res.redirect("admin/recipes")
 }
 
 exports.index = function(req, res) {
@@ -24,10 +24,10 @@ exports.post = function(req, res) {
 
   let {image_url, ingredients, preparation_step, additional_information} = req.body
 
-  let number = 1
+  let id = 1
   const lastRecipe = data.recipes[data.recipes.length - 1]
   if (lastRecipe) {
-    number = lastRecipe.number + 1
+    id = lastRecipe.id + 1
   }
 
   // variável temporária
@@ -37,7 +37,7 @@ exports.post = function(req, res) {
   data.recipes.push({
     image_url,
     title,
-    number,
+    id,
     author,
     ingredients,
     preparation_step,
@@ -47,15 +47,15 @@ exports.post = function(req, res) {
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
     if (err) return res.send("Write file error!")
 
-    return res.redirect("recipes")
+    return res.redirect("admin/recipes")
   })
 }
 
 exports.show = function(req, res) {
-  const {number} = req.params
+  const {id} = req.params
 
   const foundRecipe = data.recipes.find(function(recipe) {
-    return recipe.number == number
+    return recipe.id == id
   })
 
   if (!foundRecipe) return res.send("RECIPE NOT FOUND!")
@@ -68,10 +68,10 @@ exports.show = function(req, res) {
 }
 
 exports.edit = function(req, res) {
-  const {number} = req.params
+  const {id} = req.params
 
   const foundRecipe = data.recipes.find(function(recipe) {
-    return recipe.number == number
+    return recipe.id == id
   })
 
   if (!foundRecipe) return res.send("RECIPE NOT FOUND!")
@@ -83,20 +83,50 @@ exports.edit = function(req, res) {
   return res.render("admin/recipes/edit", {recipe})
 }
 
-exports.delete = function(req, res) {
-  const {number} = req.body
+exports.put = function(req, res) {
+  const {id} = req.body
 
-  // Tudo que retornar TRUE será colocado dentro do array 'filteredRecipes'.
-  const filteredRecipes = data.recipes.filter(function(recipe){
-    return recipe.number != number // 'id' não pode ser deletado agora
+  let index = 0
+
+  const foundRecipe = data.recipes.find(function(recipe, foundIndex) {
+    if (recipe.id == id) {
+      index = foundIndex
+
+      return true
+    }
   })
 
-  data.recipes = filteredRecipes
+  if (!foundRecipe) return res.send("RECIPE NOT FOUND!")
+
+  const recipe = {
+    ...foundRecipe,
+    ...req.body
+  }
+
+  data.recipes[index] = recipe
 
   fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
-      if(err) return res.send("Delete error!")
+    if (err) return res.send("Write file error!")
 
-      return res.redirect("recipes")
-    }
-  )
+    return res.redirect(`recipes/${id}`)
+  })
 }
+
+exports.delete = function(req, res) {
+  const {id} = req.body
+
+  const filterRecipe = data.recipes.filter(function(recipes) {
+    return recipes.id != id
+  })
+
+  data.recipes = filterRecipe
+
+  fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    if(err) return res.send("WRITE FILE ERROR!")
+
+    return res.redirect('recipes')
+  })
+
+
+}
+
