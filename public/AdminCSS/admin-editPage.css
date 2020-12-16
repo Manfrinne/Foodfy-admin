@@ -38,7 +38,7 @@
   display: flex;
 }
 
-.buttons a {
+.buttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,12 +50,14 @@
 
 .buttons .saveButton {
   background-color: #6558C3;
+  font-weight: 700;
   width: 139px;
   height: 37px;
 }
 
 .buttons .deleteButton {
   background-color: #DC4747;
+  font-weight: 700;
   width: 92px;
   height: 37px;
   margin-right: 10px;

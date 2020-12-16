@@ -17,6 +17,7 @@
 }
 
 .title-recipesManager {
+  display: contents;
   font-family: 'Roboto', bold;
   font-size: 24px;
   margin-top: 50px;
@@ -29,6 +30,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', bold;
+  font-weight: 700;
   font-size: 16px;
   color: #FFFFFF;
   border-radius: 4px;
