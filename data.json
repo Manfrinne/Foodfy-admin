@@ -27,7 +27,7 @@
     {
       "image_url": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/launchbase/receitas/pizza.png",
       "title": "Pizza 4 estações",
-      "id": 1,
+      "id": "1",
       "author": "Fabiana Melo",
       "ingredients": [
         "1 xícara (chá) de leite",
@@ -41,14 +41,18 @@
         "250 g de mussarela ralada grossa",
         "2 tomates fatiados",
         "azeitona picada",
-        "orégano a gosto"
+        "orégano a gosto",
+        "Testando a Add button",
+        "Testando a Add button2"
       ],
       "preparation_step": [
         "No liquidificador bata o leite, o ovo, o sal, o açúcar, a margarina, a farinha de trigo e o fermento em pó até que tudo esteja encorporado.",
         "Despeje a massa em uma assadeira para pizza untada com margarina e leve ao forno preaquecido por 20 minutos.",
         "Retire do forno e despeje o molho de tomate.",
         "Cubra a massa com mussarela ralada, tomate e orégano a gosto.",
-        "Leve novamente ao forno até derreter a mussarela."
+        "Leve novamente ao forno até derreter a mussarela.",
+        "Testando add button ",
+        "Lógica resolvida"
       ],
       "additional_information": "Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!"
     },
